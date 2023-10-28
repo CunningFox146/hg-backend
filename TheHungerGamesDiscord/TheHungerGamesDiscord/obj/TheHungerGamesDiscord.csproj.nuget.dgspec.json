@@ -38,13 +38,13 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Discord.Net": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[3.12.0, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -59,9 +59,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
