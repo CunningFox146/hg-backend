@@ -1,13 +1,29 @@
 ﻿using Discord;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace TheHungerGamesDiscord;
 
 public class Program
 {
     private DiscordSocketClient _client;
+    private readonly IServiceProvider _serviceProvider;
     public static Task Main(string[] args) => new Program().MainAsync();
+    
+    public Program()
+    {
+        _serviceProvider = CreateProvider();
+    }
+
+    private IServiceProvider CreateProvider()
+    {
+        var collection = new ServiceCollection();
+        
+        
+        
+        return collection.BuildServiceProvider();
+    }
 
     private async Task MainAsync()
     {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3j1AQ8M6dLbkdXYGXhUJOnBIM3963WZCFS78ZPy3i17fDXbYI2ovbydDbiKbct9ZkS8hpQHkdrgjHyMsOKpPkw==",
+  "dgSpecHash": "qBXcKsqjkEniD6RRz3rL4sPzACti5K9G2vhR2txSDiv1zD8bC2TEMCD/tFyJcdw5X4QrwAs72rn+gIMz1DWQhw==",
   "success": true,
   "projectFilePath": "/Users/makar.dzezhamesau/RiderProjects/HgBackend/TheHungerGamesDiscord/TheHungerGamesDiscord/TheHungerGamesDiscord.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,8 @@
     "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.configuration.fileextensions/7.0.0/microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",
     "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.configuration.json/7.0.0/microsoft.extensions.configuration.json.7.0.0.nupkg.sha512",
-    "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.fileproviders.abstractions/7.0.0/microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
     "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.fileproviders.physical/7.0.0/microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
     "/Users/makar.dzezhamesau/.nuget/packages/microsoft.extensions.filesystemglobbing/7.0.0/microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
