@@ -18,7 +18,7 @@ public class RollbackSystem : IRollbackSystem
 
     }
 
-    public async Task Rollback(int sessionId, DateTime targetTime)
+    public async Task Rollback(string sessionId, DateTime targetTime)
     {
         _logger.LogInformation($"Rolling back game {sessionId} to {targetTime}");
 

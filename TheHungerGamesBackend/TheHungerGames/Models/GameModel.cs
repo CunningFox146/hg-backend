@@ -5,7 +5,7 @@ namespace TheHungerGames.Models;
 
 public class GameModel : IDateRegistered, ISessionRecorder
 {
-    [JsonIgnore] [Key] public int SessionId { get; set; }
+    [JsonIgnore] [Key] public string SessionId { get; set; }
     public int Seed { get; set; }
     public DateTime GameStart { get; set; }
     public DateTime? LastSave { get; set; }

@@ -25,7 +25,8 @@ public class AnalyticsController : Controller
     {
         try
         {
-            foreach (var analyticsEvent in events) await _analyticsSystem.HandleEvent(analyticsEvent);
+            foreach (var analyticsEvent in events.OrderBy(e => e.Registered))
+                await _analyticsSystem.HandleEvent(analyticsEvent);
         }
         catch (Exception ex)
         {

@@ -20,7 +20,7 @@ public class EloRating : IPlayerRating, IRollbackable
         return (await GetPlayerRatingData(playerId))?.Rating ?? EloRatingCalculator.StartRating;
     }
 
-    public async Task OnPlayerDeath(string playerId, string killer, int sessionId)
+    public async Task OnPlayerDeath(string playerId, string killer, string sessionId)
     {
         var playerRating = await GetPlayerRatingData(playerId);
         var killerRating = killer.IsPlayerId() ? await GetPlayerRatingData(killer) : null;
@@ -41,7 +41,7 @@ public class EloRating : IPlayerRating, IRollbackable
         await _dataContext.SaveChangesAsync();
     }
 
-    private async void RecordRatingChange(Models.PlayerRating playerRating, double newRating, int sessionId)
+    private async void RecordRatingChange(Models.PlayerRating playerRating, double newRating, string sessionId)
     {
         var ratingDelta = newRating - playerRating.Rating;
         
@@ -80,7 +80,7 @@ public class EloRating : IPlayerRating, IRollbackable
         return await _dataContext.PlayerRating.FirstOrDefaultAsync(player => player.PlayerId == playerId);
     }
 
-    public async Task Rollback(int sessionId, DateTime targetTime)
+    public async Task Rollback(string sessionId, DateTime targetTime)
     {
         var rating = _dataContext.RatingDelta.Where(d => d.SessionId == sessionId && d.Registered >= targetTime);
         foreach (var ratingDelta in rating)

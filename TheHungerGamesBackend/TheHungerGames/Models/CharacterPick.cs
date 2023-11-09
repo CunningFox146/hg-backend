@@ -10,5 +10,5 @@ public class CharacterPick : IDateRegistered, ISessionRecorder
     public string PlayerId { get; set; }
 
     public DateTime Registered { get; set; }
-    public int SessionId { get; set; }
+    public string SessionId { get; set; }
 }

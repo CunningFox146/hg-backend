@@ -38,7 +38,7 @@ public class DataContext : DbContext, IRollbackable
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataContext).Assembly);
     }
 
-    public Task Rollback(int sessionId, DateTime targetTime)
+    public Task Rollback(string sessionId, DateTime targetTime)
     {
         foreach (var (dbSet, removeAction) in _dataToRollback)
         {

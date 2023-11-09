@@ -8,5 +8,5 @@ public class GameServerCrash : IDateRegistered, ISessionRecorder
     [JsonIgnore] [Key] public Guid Id { get; set; }
     public string CrashMessage { get; set; }
     public DateTime Registered { get; set; }
-    public int SessionId { get; set; }
+    public string SessionId { get; set; }
 }

@@ -26,6 +26,7 @@ public class GameLaunchHandler : AnalyticsHandler<GameModel>
 
     private async Task AddNewGame(GameModel game)
     {
+        game.SessionId = Source.SessionId;
         await dataContext.Games.AddAsync(game);
         await dataContext.SaveChangesAsync();
     }
